@@ -1,0 +1,6 @@
+ggml_opencl: A_q_d buffer size reduced from 311164928 to 268435456 due to device limitations.
+ggml_opencl: default device: 'QUALCOMM Adreno(TM) 643 (OpenCL 3.0 Adreno(TM) 643)'
+| model                          |       size |     params | backend    | ngl | n_batch |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | --------------: | -------------------: |
+| qwen2 1.5B Q4_0                | 828.59 MiB |     1.54 B | OpenCL     |  99 |     128 |           pp512 |        111.52 ± 0.01 |
+| qwen2 1.5B Q4_0                | 828.59 MiB |     1.54 B | OpenCL     |  99 |     128 |           tg128 |         13.28 ± 0.02 |
